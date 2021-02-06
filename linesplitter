@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+let msg = [...process.argv.slice(2).join(' ')];
+let mid = Math.floor(msg.length / 2);
+if (msg[mid] === ' ') {
+    msg[mid] = '\\n';
+} else {
+    let before = mid - 1;
+    let after = mid + 1;
+    while (msg[before] !== ' ' && msg[after] !== ' ' && before >= 0 && after < msg.length) {
+        before--;
+        after++;
+    }
+    if (before >= 0 && after < msg.length) {
+        if (msg[before] === ' ') {
+            msg[before] = '\\n';
+        } else {
+            msg[after] = '\\n';
+        }
+    } else {
+        console.log("[ERROR]: No space (` ') found! Check your input!");
+        process.exit(1);
+    }
+}
+console.log(msg.join(''));
