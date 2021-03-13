@@ -1,1 +1,1 @@
-/home/zng/platformer/index.min.js
+../index.min.js
