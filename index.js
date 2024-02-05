@@ -382,14 +382,14 @@ let checkpointPattern;
 
 async function loadCutscenes() {
     const checkpoint = new Image();
-    checkpoint.src = "https://i.imgur.com/JkdBYPQ.png";
+    checkpoint.src = "https://i.sportshead.dev/x4uk98.png";
     await promiseEventListener(checkpoint, "load");
     LOG("checkpoint loaded");
 
     checkpointPattern = ctx.createPattern(checkpoint, "repeat");
 
     const cowboy = new Image();
-    cowboy.src = "https://i.imgur.com/oUhfNPH.png";
+    cowboy.src = "https://i.sportshead.dev/8olarymj.png";
     await promiseEventListener(cowboy, "load");
     LOG("cowboy loaded");
 
@@ -397,42 +397,42 @@ async function loadCutscenes() {
 
 
     const directions = new Image();
-    directions.src = "https://i.imgur.com/f9BT7uQ.png";
+    directions.src = "https://i.sportshead.dev/4v350nq.png";
     await promiseEventListener(directions, "load");
     LOG("directions loaded");
 
     levels[0].cutScenes[1] = new Cutscene2D(directions, "Use the arrow keys or WASD to move.\nUse the spacebar to jump.")
 
     const startFrame = new Image();
-    startFrame.src = "https://i.imgur.com/CWLzxMX.png";
+    startFrame.src = "https://i.sportshead.dev/tot0w7af.png";
     await promiseEventListener(startFrame, "load");
     LOG("startFrame loaded");
 
     levels[0].cutScenes[2] = new Cutscene2D(startFrame, "Control the red character to get to the green goal!")
 
     const portal = new Image();
-    portal.src = "https://i.imgur.com/FOatu5m.png";
+    portal.src = "https://i.sportshead.dev/re0y3ae.png";
     await promiseEventListener(portal, "load");
     LOG("portal loaded");
 
     levels[1].cutScenes[0] = new Cutscene2D(portal, "You made it! We're in the goal portal right now. Since the cowboy has\na deep network of levels, you'll need to beat the next levels to escape.")
 
     const laserFrame = new Image();
-    laserFrame.src = "https://i.imgur.com/azIlVBA.png";
+    laserFrame.src = "https://i.sportshead.dev/rdldmwf.png";
     await promiseEventListener(laserFrame, "load");
     LOG("laserFrame loaded");
 
     levels[3].cutScenes[0] = new Cutscene2D(laserFrame, "Careful, this level has lasers! If you touch any\nof the lasers, you'll have to restart the level.")
 
     const checkpointFrame = new Image();
-    checkpointFrame.src = "https://i.imgur.com/JyYlbTS.png";
+    checkpointFrame.src = "https://i.sportshead.dev/yfz7g7d.png";
     await promiseEventListener(checkpointFrame, "load");
     LOG("checkpointFrame loaded");
 
     levels[4].cutScenes[0] = new Cutscene2D(checkpointFrame, "Woah, this one's hard! I've installed\na checkpoint for you in case you die!")
 
     const gameOver = new Image();
-    gameOver.src = "https://i.imgur.com/xXJm5Zi.png";
+    gameOver.src = "https://i.sportshead.dev/51elpf7.png";
     await promiseEventListener(gameOver, "load");
     LOG("gameOver loaded");
 
